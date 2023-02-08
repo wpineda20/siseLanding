@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <SiseHeader />
+  <main>
+    <SiseModules />
+  </main>
+  <SiseFooter />
+  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SiseHeader from "./components/SiseHeader.vue";
+import SiseModules from "./components/SiseModules.vue";
+import SiseFooter from "./components/SiseFooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    SiseHeader,
+    SiseModules,
+    SiseFooter,
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "Nunito", sans-serif;
+}
+html,
+body {
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+main {
+  min-height: 80vh;
+  background-color: #fff;
+}
+
+header,
+main,
+footer {
+  flex-shrink: 0;
 }
 </style>
