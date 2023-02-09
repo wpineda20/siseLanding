@@ -15,7 +15,10 @@
         </h4>
       </div>
       <div class="cards-section-body">
-        <a href="http://127.0.0.1:8000/" class="text-decoration-none">
+        <a
+          href="https://sise-cuscatlan.cultura.gob.sv/"
+          class="text-decoration-none"
+        >
           <div class="card-requests shadow">
             <div class="card-icon p-2">
               <img class="icon-w" :src="require('../assets/fact_check.svg')" />
