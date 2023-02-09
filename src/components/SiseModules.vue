@@ -153,4 +153,14 @@ export default {};
   font-weight: bold;
   text-transform: capitalize;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .cards-section-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+  }
+}
 </style>
